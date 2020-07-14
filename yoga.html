@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Title Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background-image: url('1234.jpg');
+  opacity: 1.0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:tan;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.button {
+  background-color: darkkhaki;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #666;
+  color: whitesmoke;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color:whitesmoke;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-color: black;
+  color:white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  background-color:black;
+  color:white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: linear-gradient(#101010, #101010);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  color: whitesmoke;
+  background-image: url('1234.jpg');
+  opacity: 1.0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-family: copperplate gothic bold;text-shadow: 4px 4px 8px #000000; opacity: 1.0;font-size: 80px;">GET IN FIT</h1>
+  <p style="font-size:x-large;font-family: ar cena;font-size: 40px;text-shadow: 2px 2px 4px #000000;"><b>Fitter,Healthier,Happier</b></p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="right">about us</a>
+  <a href="contact.html" class="right">contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    
+    <h3 style="color:coral; text-align: center;"> <b>OUR PROGRAM</b> </h3>
+    <hr>
+    
+    <div class="fakeimg" style="height:220px; color: burlywood; font-family: comic sans ms;"><a href="gym.html"><img src="gym.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>EXERCISE</b></div><br>
+    <div class="fakeimg" style="height:220px; color:burlywood;font-family: comic sans ms;"><a href="#"><img src="yoga.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>YOGA & MEDITATION</b></div><br>
+    <div class="fakeimg" style="height:220px; color: burlywood;font-family: comic sans ms;"><a href="diet.html"><img src="diet.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>DIET GUIDE</b></div>
+  </div>
+  <div class="main">
+    <h1 style="color: darkkhaki;">INNER PEACE</h1>
+    <h3 style="color: darksalmon; font-family:comic sans ms ;">Basic Yoga Poses For Beginners:</h3>
+    <hr>
+    <hr>
+          <div class="fakeimg" style="height:200px;"><img src="mountain.jpg" style="height: 160px; width:280px;">
+            <img src="triangle.jpg" style="height: 160px; width:280px;"> <img src="tree.jpg" style="height: 160px; width:280px;"></div>
+        <hr>
+    <span style='font-size:70px; color: rgb(116, 80, 14);'></span>
+    <h3 style="color: darkkhaki;">&#9755; MOUNTAIN </h3>
+    <p style="font-family: comic sans ms;">Mountain Pose is the base for all standing poses; it gives you a sense of how to ground in to your feet and feel the earth below you. Mountain pose may seem like "simply standing," but there is a ton going on.</p>
+
+    <p style="font-family: comic sans ms;"><b>How to do it:</b> Start standing with your feet together. Press down through all ten toes as you spread them open. Engage your quadriceps to lift your kneecaps and lift up through the inner thighs. Draw your abdominals in and up as you
+       lift your chest and press the tops of the shoulders down. Hold the position for 5-8 breaths.</p>
+
+    <br>
+     <h3 style="color: darkkhaki;">&#9755; TRIANGLE</h3>
+    <p style="font-family: comic sans ms;">Triangle is a wonderful standing posture to stretch the sides of the waist, open up the lungs, strengthen the legs and tone the entire body.</p>
+    <p style="font-family: comic sans ms;"><b>How to do it:</b> Start standing with your feet one leg's-length apart. Open and stretch your arms to the sides at shoulder height. Turn your right foot out 90 degrees and your left toes in about 45 degrees.
+
+      Engage your quadriceps and abdominals as you hinge to the side over your right leg. Place your right hand down on your ankle, shin or knee (or a block if you have one) and lift your left arm up to the ceiling.
+      
+      Turn your gaze up to the top hand and hold for 5-8 breaths. Lift up to stand and repeat on the opposite side.</p> 
+    <br>
+    <h3 style="color: darkkhaki;">&#9755; TREE</h3>
+    <p style="font-family: comic sans ms;">Tree is an awesome standing balance for beginners to work on to gain focus and clarity, and learn to breathe while standing and keeping the body balanced on one foot.</p>
+    <p style="font-family: comic sans ms;"><b>How to do it:</b> Start with your feet together and place your right foot on your inner left upper thigh. Press your hands in prayer and find a spot in front of you that you can hold in a steady gaze.
+
+      Hold and breathe for 8-10 breaths then switch sides. Make sure you don’t lean in to the standing leg and keep your abdominals engaged and shoulders relaxed.</p>   
+    <br>
+    <hr>
+          <div class="fakeimg" style="height:200px;"><img src="bend.jpg" style="height: 160px; width:280px;">
+            <img src="child.jpg" style="height: 160px; width:280px;"> <img src="medi.jpg" style="height: 160px; width:280px;"></div>
+        <hr>
+        <br>
+       
+       <h3 style="color: darkkhaki;">&#9755; FORWARD BEND</h3>
+       <p style="font-family: comic sans ms;">It’s important to incorporate a forward bend in yoga practice to stretch the hamstrings, lower and upper back and sides. Seated forward bend is the perfect fold for everyone to start
+         to open up the body and learn to breathe through uncomfortable positions.</p>
+         <p style="font-family: comic sans ms;"><b>How to do it:</b>Start seated with your legs together, feet firmly flexed and not turning in or out, and your hands by your hips. Lift your chest and start to hinge forward from your waist. Engage your lower abdominals and imagine your belly button moving towards the top of your thighs.
+
+          Once you hit your maximum, stop and breathe for 8-10 breaths. Make sure your shoulders, head and neck are all released.</p>
+       <br>
+          <h3 style="color: darkkhaki;">&#9755; CHILD'S POSE</h3>
+       <p style="font-family: comic sans ms;">Every one needs a good resting pose and Child’s pose is an awesome one not just for beginners but for yoga practitioners of all levels.</p>
+       <p style="font-family: comic sans ms;"><b>How to do it:</b>Start on all fours then bring your knees and feet together as you sit your butt back to your heels and stretch your arms forward. Lower your forehead to the floor (or block or pillow or blanket) and let your entire body release. Hold for as long as you wish!</p>
+        <br>
+        
+          <h3 style="color: darkkhaki;">&#9755; BREATHING</h3>
+       <p style="font-family: comic sans ms;">Breathing is considered one of the most important pose to end your yoga session with. it removes all the negitivity from and around you giving you a fresh feeling</p>
+       <p style="font-family: comic sans ms;"><b>How to do it:</b> Sit with legs crossed in a comfertable position. back straights,hands streached to knee. close your eyes and breath in,slowly. hold for a sec then breath out,slowly.Continue for 5-8 times then open your eyes slowly.</p>
+        <br>
+        
+        <p style="font-family: comic sans ms;"><b>For advanced yoga and meditation training with professtional trainers join our advance couse</b></p>
+        <button class="button"><b>JOIN NOW</b></button>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>&copy; 2020  GET IN  FIT </h2><h2>ALL  RIGHTS  RESERVED</h2>
+  </div>
+
+</body>
+</html>

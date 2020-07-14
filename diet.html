@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Title Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background-image: url('food.jpg');
+  opacity: 1.0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:wheat;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.button {
+  background-color: darkkhaki;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #666;
+  color: whitesmoke;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color:whitesmoke;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-color: black;
+  color:white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  background-color:black;
+  color:white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: linear-gradient(#101010, #101010);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  color: wheat;
+  background-image: url('food.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-family: copperplate gothic bold;font-size: 80px;text-shadow: 4px 4px 8px #000000;">GET IN FIT</h1>
+  <p style="font-size:x-large;font-family: ar cena;font-size: 40px;text-shadow: 2px 2px 4px #000000;"><b>Fitter,Healthier,Happier</b></p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="right">about us</a>
+  <a href="contact.html" class="right">contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    
+    <h3 style="color:coral; text-align: center;"> <b>OUR PROGRAM</b> </h3>
+    <hr>
+    
+    <div class="fakeimg" style="height:220px; color: burlywood; font-family: comic sans ms;"><a href="gym.html"><img src="gym.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>EXERCISE</b></div><br>
+    <div class="fakeimg" style="height:220px; color:burlywood;font-family: comic sans ms;"><a href="yoga.html"><img src="yoga.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>YOGA & MEDITATION</b></div><br>
+    <div class="fakeimg" style="height:220px; color: burlywood;font-family: comic sans ms;"><a href="#"><img src="diet.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>DIET GUIDE</b></div>
+  </div>
+  <div class="main">
+    <h1 style="color: darkkhaki;">HEALTH IS WEALTH</h1>
+    <h3 style="color: darksalmon; font-family:comic sans ms ;">Simple Healthy Diet:</h3>
+    <hr>
+    <div class="fakeimg" style="height:200px;"><img src="eggs.jpg" style="height: 160px; width:280px;">
+      <img src="dal.jpg" style="height: 160px; width:280px;"> <img src="oats.jpg" style="height: 160px; width:280px;"></div>
+    <hr>
+      <span style='font-size:70px; color: rgb(116, 80, 14);'></span>
+    
+    <p style="font-family: comic sans ms;">The best way to stay healthy is a well balanced diet intake. you diet in general must include protein, vitamin and carbohydrate intake. Try to avoide food with fat, oil and excess sugar levels.
+    </p>
+    <p><b>WE HAVE FEW GENERAL DIET TO FOLLOW WHILE WORKING ON YOUR BODY:</b></p>
+
+    <br>
+     <h3 style="color: darkkhaki;">&#9755; DIET 1</h3>
+    <p style="font-family: comic sans ms;"><b>1. Breakfast:</b> Sambar with 2 brown rice idlis/ Paneer sandwich with mint chutney</p>
+    <p style="font-family: comic sans ms;"><b>2.  Lunch: </b>Whole-grain roti with mixed-vegetable curry with one dal</p>
+    <p style="font-family: comic sans ms;"><b>3.  Dinner:</b> Tofu/chicken curry with mixed vegetables and a fresh spinach salad/chicken gravy with 2 multigrain rotis</p>
+    <br>
+    <h3 style="color: darkkhaki;">&#9755; DIET 2</h3>
+    <p style="font-family: comic sans ms;"><b>1. Breakfast:</b>  Chana dal pancakes with mixed vegetables and a glass of milk/ bread and egg with fruits</p>
+    <p style="font-family: comic sans ms;"><b>2.  Lunch: </b>Chickpea curry with brown rice/ Brown rice with dal</p>
+    <p style="font-family: comic sans ms;"><b>3.  Dinner:</b> Khichdi with sprout salad/Veg paratha with raita</p>
+    <br>
+       
+       <h3 style="color: darkkhaki;">&#9755; DIET 3</h3>
+       <p style="font-family: comic sans ms;"><b>1. Breakfast:</b> Yogurt with sliced fruits and sunflower seeds/ vegetable poha</p>
+    <p style="font-family: comic sans ms;"><b>2.  Lunch: </b>Whole-grain roti with vegetable sabzi/ Dal with veg or non veg sabzi and brown rice</p>
+    <p style="font-family: comic sans ms;"><b>3.  Dinner:</b> Chana masala with basmati rice and green salad/ One bowl of fruits and vegetables with multigrain rotis</p>
+    <br>
+          <h3 style="color: darkkhaki;">&#9755; DIET 4</h3>
+          <p style="font-family: comic sans ms;"><b>1. Breakfast:</b> Multigrain parathas with avocado and sliced papaya/ dal paratha with mixed vegetables</p>
+          <p style="font-family: comic sans ms;"><b>2.  Lunch: </b>Large salad with rajma curry and quinoa/ one bowl mixed vegetable kadai</p>
+          <p style="font-family: comic sans ms;"><b>3.  Dinner:</b> Chana masala with basmati rice and green salad/ One bowl of fruits and vegetables with multigrain rotis</p>
+          <br>
+          <hr>
+          <div class="fakeimg" style="height:200px;"><img src="veg.jpg" style="height: 160px; width:280px;">
+            <img src="food.jpg" style="height: 160px; width:280px;"> <img src="juice.jpg" style="height: 160px; width:280px;"></div>
+        <hr>
+        <br>
+          <h3 style="color: darkkhaki;">&#9755; FOODS YOU CAN ADD TO YPUR DIET</h3>
+          <hr>
+       <pre style="font-family: comic sans ms;">
+        Fruits with buttermilk or green tea
+        Protein shake with nuts and seeds
+        Veg sandwich or milk and apple.
+        Walnuts and dates
+        Vegetable/ fruit salads
+        Fresh fruit smoothies or whey protein shakes
+        Multigrain flour khakras.</pre>
+        <br>
+        <h3 style="color: darkkhaki;">&#9755; FOODS NEED TO BE AVOIDED</h3>
+        <hr>
+       <pre style="font-family: comic sans ms;">
+        Highly sweetened beverages such as soda, aerated drinks, sports drinks
+        Sweeteners like sugar, honey, condensed milk
+        Foods which have high sugar such as candy, ice cream, cakes, cookies, rice pudding, high sugar cereals etc.
+        Foods which have high fats such as French fries, chips, fried foods etc.
+        Trans fats like Vanaspati, margarine, processed foods
+        Refined oils such as canola oil, soybean oil, grapeseed oil etc.
+        Refined grains like white bread, white pasta</pre>
+        <br>
+        <p style="font-family: comic sans ms;"><b>For persionalised diet suggested by our professtionals join our advance couse</b></p>
+        <button class="button"><b>JOIN NOW</b></button>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>&copy; 2020  GET IN  FIT </h2><h2>ALL  RIGHTS  RESERVED</h2>
+  </div>
+
+</body>
+</html>

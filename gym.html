@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Title Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background-image: url('edit.jpg');
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color:whitesmoke;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.button {
+  background-color: darkkhaki;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #666;
+  color: whitesmoke;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color:whitesmoke;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  background-color: black;
+  color:white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  background-color:black;
+  color:white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: linear-gradient(#101010, #101010);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  color: whitesmoke;
+  background-image: url('edit.jpg');
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style=" opacity: 1.0;font-family: copperplate gothic bold;font-size: 80px;text-shadow: 4px 4px 8px #000000;">GET IN FIT</h1>
+  <p style="font-size:40px;font-family: ar cena; text-shadow: 2px 2px 4px #000000;"><b>Fitter,Healthier,Happier</b></p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="right">about us</a>
+  <a href="contact.html" class="right">contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    
+    <h3 style="color:coral; text-align: center;"> <b>OUR PROGRAM</b> </h3>
+    <hr>
+    
+    <div class="fakeimg" style="height:220px; color: burlywood; font-family: comic sans ms;"><a href="#"><img src="gym.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>EXERCISE</b></div><br>
+    <div class="fakeimg" style="height:220px; color:burlywood;font-family: comic sans ms;"><a href="yoga.html"><img src="yoga.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>YOGA & MEDITATION</b></div><br>
+    <div class="fakeimg" style="height:220px; color: burlywood;font-family: comic sans ms;"><a href="diet.html"><img src="diet.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>DIET GUIDE</b></div>
+  </div>
+  <div class="main">
+    <h1 style="color: darkkhaki;">SWEAT IT OUT</h1>
+    <h3 style="color: darksalmon; font-family:comic sans ms ;">Simple Exercises For Beginners:</h3>
+    
+    <hr>
+          <div class="fakeimg" style="height:200px;"><img src="crunch.jpg" style="height: 160px; width:280px;">
+            <img src="jog.jpg" style="height: 160px; width:280px;"> <img src="plank.jpg" style="height: 160px; width:280px;"></div>
+        <hr>
+    <span style='font-size:70px; color: rgb(116, 80, 14);'></span>
+    <h3 style="color: darkkhaki;">&#9755; SPOT JOGGING</h3>
+    <p style="font-family: comic sans ms;">The best way to burn calorise is jogging. But if you are too busy to go out you can go for spot jogging. Ajogging of 10 min burns upto 50 calories. So start with 8-10 min of jogging.</p>
+
+    <br>
+     <h3 style="color: darkkhaki;">&#9755; SKIPPING</h3>
+    <p style="font-family: comic sans ms;">Skipping needs no introduction.Its more of fun than exercise. Skipping burns upto 10 calories per minute. So start with 8-10 min of skipping daily.</p>
+    <br>
+    <h3 style="color: darkkhaki;">&#9755; SQUARTS</h3>
+    <p style="font-family: comic sans ms;">Squats are a great way to lose inches from thighs, but it is also great to lose overall body weight. It increases the heartbeat and gives a feel of the cardiovascular exercise.
+       Stand with your feet shoulders width apart and squat in a sitting position. Your thighs should be parallel to the floor and back straight. If you find this workout difficult, 
+       use a chair for support. 100 squats help you burn close to 108 calories</p>
+       <br>
+       <hr>
+          <div class="fakeimg" style="height:250px;"><img src="squarts.jpg" style="height: 190px; width:280px;">
+            <img src="leg.jpg" style="height: 190px; width:280px;"> <img src="streach.jpg" style="height: 190px; width:280px;"></div>
+        <hr>
+       <br>
+       <h3 style="color: darkkhaki;">&#9755; CRUNCHES</h3>
+       <p style="font-family: comic sans ms;">Abdominal fat is one problem that everybody wants to get rid of. The best and easiest way to do this is by doing crunches. Lay flat on your back with your knees bent.
+          Place your hands under your hand and try to pull yourself up towards your knees. 3 sets of 25 repetitions on alternate days can do wonders to your body. 6 minutes of crunches
+           in a day can burn up to 60 calories. The best part is that you can do it while watching television too!</p>
+       <br>
+          <h3 style="color: darkkhaki;">&#9755; SIDE-LEG RISE</h3>
+       <p style="font-family: comic sans ms;">If you have been a lazy person all your life, then those love handles are your nightmare. Bid adieu to them by doing this very simple exercise. Just lay on either side and 
+         lift your leg as high as you can. This will help you to get rid of that stubborn fat on your sides and give you a much leaner look. You can do it easily while standing as well.
+          300 raises can burn up to 40 calories.</p>
+        <br>
+        
+          <h3 style="color: darkkhaki;">&#9755; PLANK</h3>
+       <p style="font-family: comic sans ms;">The plank exercise builds tremendous bouts of strength and is achievable from the comfort of your own home. The plank will help you build strength and with that, some serious body confidence.
+          And we know confidence is attractive.Plank can burn upto 3-4 calories per minute. Start with 1-2 min of plank ang gradually increase the time for plank.</p>
+        <br>
+        <h3 style="color: darkkhaki;">&#9755; STREACHING</h3>
+       <p style="font-family: comic sans ms;">Stretching not only helps you to feel relaxed, it is actually helpful in losing weight. It improves flexibility, increases blood circulation, relieves muscle tension, which contributes
+          in fetching better results from the routine you follow. You can do it anywhere. 3 minutes of stretching after your workout are enough for visible results. Stretching for 10 minutes every day can help you get rid of almost 50 calories.</p>
+        <br>
+        <p style="font-family: comic sans ms;"><b>For advanced training with professtional trainers join our advance couse</b></p>
+        <button class="button"><b>JOIN NOW</b></button>
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2>&copy; 2020  GET IN  FIT </h2><h2>ALL  RIGHTS  RESERVED</h2>
+  </div>
+
+</body>
+</html>

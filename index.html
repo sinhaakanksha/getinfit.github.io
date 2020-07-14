@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background-image: url('drop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: lavender;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #666;
+  color: whitesmoke;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color:whitesmoke;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 35%; /* IE10 */
+  flex: 35%;
+  background-color: black;
+  color:white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 65%; /* IE10 */
+  flex: 65%;
+  background-color:black;
+  color:white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: linear-gradient(#101010, #101010);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  color: whitesmoke;
+  background-image: url('drop.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-family: copperplate gothic bold;text-shadow: 4px 4px 8px #000000; opacity: 1.0;font-size: 80px;">GET IN FIT</h1>
+  <p style="font-size:x-large; font-family: ar cena;font-size: 40px;text-shadow: 2px 2px 4px #000000;"><b>Fitter,Healthier,Happier</b></p>
+  
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="about.html" class="right">about us</a>
+  <a href="contact.html" class="right">contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    
+    <h3 style="color:coral; text-align: center;font-size: larger;"><b> OUR PROGRAM</b> </h3>
+    <hr>
+    <div class="fakeimg" style="height:220px; color: burlywood;"><a href="gym.html"><img src="gym.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>GYM TRAINING</b></div><br>
+    <div class="fakeimg" style="height:220px; color: burlywood;"><a href="yoga.html"><img src="yoga.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>YOGA & MEDITATION</b></div><br>
+    <div class="fakeimg" style="height:220px; color: burlywood;"><a href="diet.html"><img src="diet.jpg" style="height:160px; width:250px;border-radius: 10px;"></a><br><b>DIET GUIDE</b></div>
+  </div>
+  <div class="main">
+    <h2 style="color: darkkhaki;">HEALTHS ALL THAT MATTERS</h2>
+    
+      
+    <div class="fakeimg" style="height:700px;">
+      <br>
+      <br>
+      <p style="font-family: comic sans ms; font-size: 15px;"> Health has always been primary concern for every one because its very well said that<b>'health is wealth</b>. There is no use of money if you are not healthy enough to enjoy your life.
+    We all try our best to stay healthy. Some may take the healph of exercise,yoga,diet etc to control their mental and physical health. Since the COVID-19 pendamic has hit the world our lives has changed completely. We need to have a better immunity to fight against the corona vieus.
+  But COVID-19 closures of parks, gyms, fitness studios, and other public places are resulting in reduced opportunities for physical activity — particularly for people who are not able to exercise at home. Social distancing may further affect people’s ability to exercise, especially if outdoor physical activity is not an option due to shelter-in-place orders, crowded outdoor spaces, bad weather, or other factors.
+
+  If you are working from home, you may find that you are sitting for more extended periods. And, changes in your daily routines — such as caring for children who are home from school — may make it more challenging to find time to exercise.
+ </p><br>
+<p style="font-family: comic sans ms; font-size:15px;">With continuous extension in the lockdown its important to keep ourself healthy. Its important to do exercise and have a healthy eating habbit.
+  Regular exercise is important to boost you immune system  ,control weight gain, reduce anxiety and stress and improve sleep. These are few common problem all will face during lockdown. So here we are with fer exercise and diet cources you can follow inorder to keep yourself healthy this quarantine.For more details do have a look at  our programs.
+</p></div>
+    </div>
+</div>
+
+<div class="footer">
+  <h2>&copy; 2020  GET IN  FIT </h2><h2>ALL  RIGHTS  RESERVED</h2>
+</div>
+
+</body>
+</html>

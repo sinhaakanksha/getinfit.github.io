@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 100px;
+  text-align: center;
+  background-image: url('edit.jpg');
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: wheat;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #666;
+  color: whitesmoke;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color:#666;
+  color: whitesmoke;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: black;
+  color:white;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:black;
+  color:white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-image: linear-gradient(#101010, #101010);
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  color: wheat;
+  background-image: url('edit.jpg');
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-shadow: 4px 4px 8px #000000;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="font-size: 80px;text-shadow: 4px 4px 8px #000000;font-family: copperplate gothic bold;">GET IN FIT</h1>
+  <p style="font-size:x-large; font-family: ar cena;font-size: 40px;text-shadow: 2px 2px 4px #000000;"><b>Fitter,Healthier,Happier</b></p>
+</div>
+
+<div class="navbar">
+  <a href="index.html" >Home</a>
+  
+  <a href="#" class="right active ">about us</a>
+  <a href="contact.html" class="right">contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    
+    
+    <div class="fakeimg" style="height:600px;"><img src="yogado.jpg" style="height:550px; width:250px; border-radius: 5px;border:3px coral;"><br><b></b></div><br>
+    
+  </div>
+  <div class="main">
+    <h2 style="font-family: ar cena;">About Our</h2> <h1 style="color:darkkhaki;">GET IN FIT</h1>
+    <hr>
+    <br>
+    <br>
+    <p style="text-align: left; font-size: large;color: honeydew; font-family: comic sans ms;">GET IN FIT is professional fitness institute trusted by a large population of the country. We have expertise in providing
+       expert advices and training in mental and physical fitness.We have trained professionals with good  exprience at your srevice.
+       You will exprience a comletely satisfied transformation as per your requirement. 
+    </p>
+    <br>
+    <p style="text-align: left; font-size: large;color: honeydew; font-family: comic sans ms;">Trained experts in gym training and yoga along with nutrition experts will provide you with a complete fitness pakage with 100% output.
+       We have a 100% customer satisfaction when it comes to fitness. For begining level you can follow our begines course(can be followd from home) mentioned under each program and for further do join our advanced courses.You will get the best possible solutions for your problem, may it be weight loss,body building,mental peace and many more.
+
+    </p>
+  </div>
+</div>
+
+<div class="footer">
+   <h2>&copy; 2020  GET IN  FIT </h2><h2>ALL  RIGHTS  RESERVED</h2>
+</div>
+
+</body>
+</html>
